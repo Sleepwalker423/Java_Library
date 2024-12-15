@@ -1,19 +1,19 @@
 /**
- * This class provides methods to request various inputs from users, with built in range checks and valid input checks. 
+ * This class provides methods to request various user inputs, with built-in range checks and valid input checks. 
  */
 package textutils.inputrequest;
 
 class InputRequest{
 
     /**
-     * This method is used to prompt the program user with a message given by the implementor and repeadedly request a valid value until one is given. 
+     * This method prompts the program user with a message given by the implementor and repeatedly requests a valid value until one is provided. 
      * @param The data type of <E> must not be larger than a double.
      * @param <E>
      * @param request
      * @param min
      * @param max
      * @param scan
-     * @return Returns a user given value with the inclusive range specified by min and max.
+     * @return Returns a user-given value with the inclusive range specified by min and max.
      */
     public <E extends Number> E requestNumber(String request, E min, E max, java.util.Scanner scan) {
 
